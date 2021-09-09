@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -33737,6 +33737,120 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="GMSN-R2Project">
+<packages>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
+NS Package M08A</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-1.905" y1="1.905" x2="-1.27" y2="1.905" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.2032" layer="51"/>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="OPAMP-1">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="0" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
+<pin name="+IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="-IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<text x="2.54" y="-3.175" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
+<text x="2.54" y="5.08" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
+</symbol>
+<symbol name="PWR+-">
+<pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<text x="1.27" y="3.175" size="0.8128" layer="93" rot="R90">V+</text>
+<text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TL072" prefix="IC">
+<description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="OPAMP-1" x="15.24" y="10.16" swaplevel="1"/>
+<gate name="B" symbol="OPAMP-1" x="15.24" y="-12.7" swaplevel="1"/>
+<gate name="P" symbol="PWR+-" x="15.24" y="10.16" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="DIL08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -33797,14 +33911,14 @@ by exp-lbrs.ulp</description>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="300pF"/>
-<part name="R55-RES2" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
+<part name="RESONANCE" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
 <part name="GND27" library="SparkFun" deviceset="GND" device=""/>
 <part name="OUTPUT1" library="og-pj301_variations" deviceset="PJ301_THONKICONN" device="6"/>
 <part name="GND29" library="SparkFun" deviceset="GND" device=""/>
 <part name="R57" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="100K"/>
 <part name="V-OCT1" library="og-pj301_variations" deviceset="PJ301_THONKICONN" device="6"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="R1-F2" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
+<part name="FREQUENCY" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
 <part name="R2" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="100k"/>
 <part name="R3" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="91k"/>
 <part name="R7" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="100k"/>
@@ -33860,6 +33974,14 @@ by exp-lbrs.ulp</description>
 <part name="R79" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="100"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="OUTPUTLEVEL" library="GMSN" deviceset="9MMPOT" device="" value="100K"/>
+<part name="IC5" library="GMSN-R2Project" deviceset="TL072" device="D"/>
+<part name="R6" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="100k"/>
+<part name="R8" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="62k"/>
+<part name="R9" library="Pure VCF" deviceset="GMSN_R-US_" device="M0805" value="62k"/>
+<part name="FM-LEVEL" library="og-pots" deviceset="POT_US" device="VERTICAL" value="10kB"/>
+<part name="FM_IN" library="og-pj301_variations" deviceset="PJ301_THONKICONN" device="6"/>
+<part name="GND4" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33951,7 +34073,7 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="-39.878" y="52.34" size="0.762" layer="95" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="-39.878" y="55.364" size="0.762" layer="96" font="vector" ratio="10" rot="R180" align="top-center"/>
 </instance>
-<instance part="R55-RES2" gate="G$1" x="-133.35" y="90.678" smashed="yes">
+<instance part="RESONANCE" gate="G$1" x="-133.35" y="90.678" smashed="yes">
 <attribute name="NAME" x="-138.43" y="88.138" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-135.89" y="88.138" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -33983,7 +34105,7 @@ by exp-lbrs.ulp</description>
 <wire x1="-26.416" y1="109.982" x2="-26.416" y2="111.252" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R55-RES2" gate="G$1" pin="A"/>
+<pinref part="RESONANCE" gate="G$1" pin="A"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="-133.35" y1="83.058" x2="-133.35" y2="77.978" width="0.1524" layer="91"/>
 </segment>
@@ -34207,14 +34329,14 @@ by exp-lbrs.ulp</description>
 <label x="-36.576" y="46.482" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R55-RES2" gate="G$1" pin="S"/>
+<pinref part="RESONANCE" gate="G$1" pin="S"/>
 <wire x1="-128.27" y1="90.678" x2="-123.19" y2="90.678" width="0.1524" layer="91"/>
 <label x="-123.19" y="90.678" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESONANCE_IN2" class="0">
 <segment>
-<pinref part="R55-RES2" gate="G$1" pin="E"/>
+<pinref part="RESONANCE" gate="G$1" pin="E"/>
 <wire x1="-133.35" y1="98.298" x2="-133.35" y2="110.998" width="0.1524" layer="91"/>
 <label x="-133.35" y="110.998" size="1.778" layer="95"/>
 </segment>
@@ -34650,7 +34772,7 @@ by exp-lbrs.ulp</description>
 <instance part="GND1" gate="1" x="78.74" y="20.32" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="81.28" y="17.78" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R1-F2" gate="G$1" x="71.12" y="53.34" smashed="yes">
+<instance part="FREQUENCY" gate="G$1" x="71.12" y="53.34" smashed="yes">
 <attribute name="NAME" x="66.04" y="50.8" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="68.58" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -34786,6 +34908,33 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="132.08" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="132.08" y="50.8" size="1.778" layer="96"/>
 </instance>
+<instance part="IC5" gate="A" x="48.26" y="-5.08" smashed="yes">
+<attribute name="NAME" x="50.8" y="-8.255" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="50.8" y="0" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="R6" gate="G$1" x="45.72" y="10.16" smashed="yes">
+<attribute name="NAME" x="41.91" y="11.6586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="41.91" y="6.858" size="1.778" layer="96"/>
+</instance>
+<instance part="R8" gate="G$1" x="30.48" y="-2.54" smashed="yes">
+<attribute name="NAME" x="26.67" y="-1.0414" size="1.778" layer="95"/>
+</instance>
+<instance part="R9" gate="G$1" x="68.58" y="-5.08" smashed="yes">
+<attribute name="NAME" x="64.77" y="-3.5814" size="1.778" layer="95"/>
+</instance>
+<instance part="FM-LEVEL" gate="G$1" x="15.24" y="-17.78" smashed="yes">
+<attribute name="NAME" x="10.16" y="-20.32" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="12.7" y="-20.32" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="FM_IN" gate="G$1" x="-10.16" y="-5.08" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-7.62" y="-1.016" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="GND4" gate="1" x="15.24" y="-33.02" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="17.78" y="-35.56" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND6" gate="1" x="0" y="-17.78" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="2.54" y="-20.32" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -34808,7 +34957,7 @@ by exp-lbrs.ulp</description>
 <pinref part="IC2" gate="D" pin="-IN"/>
 </segment>
 <segment>
-<pinref part="R1-F2" gate="G$1" pin="A"/>
+<pinref part="FREQUENCY" gate="G$1" pin="A"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="71.12" y1="45.72" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 </segment>
@@ -34868,10 +35017,25 @@ by exp-lbrs.ulp</description>
 <wire x1="360.68" y1="139.7" x2="360.68" y2="134.62" width="0.1524" layer="91"/>
 <label x="360.68" y="132.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="FM_IN" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="FM_IN" gate="G$1" pin="1"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="0" y="-7.62"/>
+</segment>
+<segment>
+<pinref part="FM-LEVEL" gate="G$1" pin="A"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="15.24" y1="-25.4" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="10V" class="1">
 <segment>
-<pinref part="R1-F2" gate="G$1" pin="E"/>
+<pinref part="FREQUENCY" gate="G$1" pin="E"/>
 <wire x1="71.12" y1="60.96" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
 <label x="53.34" y="68.58" size="1.778" layer="95"/>
@@ -34928,7 +35092,7 @@ by exp-lbrs.ulp</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R1-F2" gate="G$1" pin="S"/>
+<pinref part="FREQUENCY" gate="G$1" pin="S"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 </segment>
@@ -34951,6 +35115,10 @@ by exp-lbrs.ulp</description>
 <wire x1="99.06" y1="7.62" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
 <junction x="99.06" y="30.48"/>
 <pinref part="IC2" gate="D" pin="+IN"/>
+<wire x1="99.06" y1="7.62" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="99.06" y="7.62"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="-5.08" x2="73.66" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$67" class="0">
@@ -35148,6 +35316,48 @@ by exp-lbrs.ulp</description>
 <pinref part="R79" gate="G$1" pin="1"/>
 <pinref part="IN_MIX" gate="G$1" pin="3"/>
 <wire x1="370.84" y1="144.78" x2="373.38" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="IC5" gate="A" pin="OUT"/>
+<wire x1="63.5" y1="-5.08" x2="55.88" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-5.08" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
+<junction x="55.88" y="-5.08"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="10.16" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="10.16" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="A" pin="-IN"/>
+<wire x1="35.56" y1="-2.54" x2="40.64" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="35.56" y="-2.54"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="FM-LEVEL" gate="G$1" pin="S"/>
+<wire x1="20.32" y1="-17.78" x2="35.56" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-17.78" x2="35.56" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="A" pin="+IN"/>
+<wire x1="35.56" y1="-7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="FM_IN" gate="G$1" pin="3"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="-2.54" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="FM-LEVEL" gate="G$1" pin="E"/>
+<wire x1="15.24" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="15.24" y="-2.54"/>
 </segment>
 </net>
 </nets>
