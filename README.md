@@ -9,3 +9,8 @@ Based on the work by forestcaver/Analog-Voice (github)
 Added CV on Resonance
 Moved to larger components (0804)
 Added more inputs and input mixer out.
+
+
+as3320-BandPass-Dev1  21/ouct/2021 In review for board
+
+as3320-BandPass Layout version
