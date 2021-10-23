@@ -18,6 +18,6 @@ Based on the work by forestcaver/Analog-Voice (github)
 * Added more inputs and input mixer out.
 
 ## History
-as3320-BandPass-Dev1  2/ouct/2021 In review for board
+as3320-BandPass-Dev1  2/oct/2021 In review for board
 
 as3320-BandPass Layout version
