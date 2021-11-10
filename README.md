@@ -18,6 +18,10 @@ Based on the work by forestcaver/Analog-Voice (github)
 * Added more inputs and input mixer out.
 
 ## History
-as3320-BandPass-Dev1  2/oct/2021 In review for board
+as3320-BandPass-Dev2 10/Nov/2021 This board is untested. D6 repositioned.
+
+as3320-BandPass-Dev1  2/oct/2021 D6 is shorted to FM level POT Do NOT USE (To use, a TTH D6 can be substituted  betweenthe output pin and ground.
+
+10/Nov/2021 Rec2021 Recieved and will be built with above botch. 
 
 as3320-BandPass Layout version
